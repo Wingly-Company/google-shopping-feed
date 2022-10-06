@@ -1,0 +1,54 @@
+{
+    "name": "wingly/google-shopping-feed",
+    "description": "An XML Product feed implementation for Google Merchant Shopping",
+    "authors": [
+        {
+            "name": "Dimitris Karapanos",
+            "email": "dimitris@wingly.io",
+            "homepage": "https://www.wingly.io",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/Wingly-Company/google-shopping-feed",
+    "keywords": [
+        "Laravel",
+        "GoogleShoppingFeed"
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^9.0",
+        "spatie/array-to-xml": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "orchestra/testbench": "^7.0",
+        "friendsofphp/php-cs-fixer": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wingly\\GoogleShoppingFeed\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wingly\\GoogleShoppingFeed\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wingly\\GoogleShoppingFeed\\GoogleShoppingFeedServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "format": [
+            "vendor/bin/php-cs-fixer fix"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
