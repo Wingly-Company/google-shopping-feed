@@ -1,4 +1,6 @@
 # GoogleShoppingFeed
+[![tests](https://github.com/Wingly-Company/google-shopping-feed/actions/workflows/tests.yml/badge.svg)](https://github.com/Wingly-Company/google-shopping-feed/actions/workflows/tests.yml)
+[![code style](https://github.com/Wingly-Company/google-shopping-feed/actions/workflows/code-style.yml/badge.svg)](https://github.com/Wingly-Company/google-shopping-feed/actions/workflows/code-style.yml)
 
 ## Introduction 
 
