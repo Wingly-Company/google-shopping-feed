@@ -2,7 +2,6 @@
 
 namespace Wingly\GoogleShoppingFeed\Tests;
 
-use Wingly\GoogleShoppingFeed\GoogleShopping;
 use Wingly\GoogleShoppingFeed\Node;
 
 class NodeTest extends TestCase

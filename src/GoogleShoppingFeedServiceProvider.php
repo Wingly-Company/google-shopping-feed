@@ -13,6 +13,6 @@ class GoogleShoppingFeedServiceProvider extends ServiceProvider
 
     public function registerViews(): void
     {
-        $this->loadViewsFrom(__DIR__ . '/../resources/views/', 'google-shopping-feed');
+        $this->loadViewsFrom(__DIR__.'/../resources/views/', 'google-shopping-feed');
     }
 }

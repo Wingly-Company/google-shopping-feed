@@ -10,7 +10,7 @@
         <description>{{ $description }}</description>
         @foreach($items as $item)
             <item>
-                @foreach (item as $node)
+                @foreach ($item as $node)
                     {!! $node !!}
                 @endforeach
             </item>

@@ -2,9 +2,7 @@
 
 namespace Wingly\GoogleShoppingFeed;
 
-use Closure;
 use Illuminate\Contracts\Support\Responsable;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\View;
 
@@ -62,7 +60,7 @@ class Feed implements Responsable
 
     public function toXml(): string
     {
-        $items = $this->feedItemsCallback()->map(function ($item) {
+        $items = call_user_func($this->feedItemsCallback)->map(function ($item) {
             return call_user_func($this->nodesCallback, $item);
         });
 
