@@ -42,7 +42,7 @@ class InputSanitizer
         $input = str_replace($search, $replace, $input);
 
         // Remove any non-ASCII Characters
-        $input = preg_replace("/[^\x01-\x7F]/", '', $input);
+        $input = preg_replace("/[^\x20-\x7E]/u", '', $input);
 
         return $input;
     }
