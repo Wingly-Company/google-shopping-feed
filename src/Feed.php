@@ -12,7 +12,7 @@ class Feed implements Responsable
 
     protected string $link = '';
 
-    /** @var callable(\Illuminate\Database\Eloquent\Model):array<int, \Wingly\GoogleShoppingFeed\Node> */
+    /** @var callable(\Illuminate\Database\Eloquent\Model):array<int, Node> */
     public $nodesCallback;
 
     /** @param callable():\Illuminate\Support\Collection $callback */
@@ -39,7 +39,7 @@ class Feed implements Responsable
     }
 
     /**
-     * @param callable(\Illuminate\Database\Eloquent\Model):array<int, \Wingly\GoogleShoppingFeed\Node> $callback
+     * @param callable(\Illuminate\Database\Eloquent\Model):array<int, Node> $callback
      */
     public function toFeedItem($callback): self
     {
